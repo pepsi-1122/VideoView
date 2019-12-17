@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg3"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="143dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="300dp"/>
+
+    <ImageView
+        android:id="@+id/big_image"
+        android:layout_width="350dp"
+        android:layout_height="380dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/btn4"
+        android:adjustViewBounds="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/element_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/element_guide"
+        android:layout_toRightOf="@id/btn6"
+        android:layout_marginTop="332dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/progress_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="5dp"
+            android:text="hahah"
+            android:layout_marginLeft="150dp"/>
+
+
+        <com.ewaytek.android.MyProgressView2
+            android:id="@+id/element_progress"
+            android:layout_width="210dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            style="@android:style/Widget.ProgressBar.Horizontal" />
+
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="130dp">
+
+            <TextView
+                android:id="@+id/progress_text"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/progress_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/element1"
+        android:layout_width="109dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="406dp"
+        android:layout_marginTop="332dp"
+        android:layout_toRightOf="@id/btn6"
+        android:background="@mipmap/element1"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/element_guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/element_guide"
+        android:layout_toRightOf="@id/btn4"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/progress_bar_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="haha"
+            android:textSize="30sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="150dp"/>
+
+        <com.ewaytek.android.MyProgressView2
+            android:id="@+id/element_progress2"
+            android:layout_width="210dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            style="@android:style/Widget.ProgressBar.Horizontal" />
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="130dp">
+
+            <TextView
+                android:id="@+id/progress_text2"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/progress_time_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/element2"
+        android:layout_width="109dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="406dp"
+        android:layout_marginTop="258dp"
+        android:layout_toRightOf="@id/btn4"
+        android:background="@mipmap/element3"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="41dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="玫瑰籽精油"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Rosehip"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@color/transparent"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/btn1"
+        android:layout_marginTop="59dp"
+        android:layout_marginLeft="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="艾草精油"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Mugwort"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@color/transparent"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/btn1"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="22dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/btn1"
+        android:layout_marginLeft="53dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="柠檬精油"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Lemon"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@color/transparent"
+        android:layout_below="@+id/btn1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/btn2"
+        android:layout_toRightOf="@+id/btn3"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="薄荷精油"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Peppermint"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@color/transparent"
+        android:layout_toRightOf="@+id/btn3"
+        android:layout_below="@+id/btn2"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="22dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/btn3"
+        android:layout_marginLeft="41dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="佛手柑精油"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Bergamot"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn3"
+        android:background="@color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="15dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/btn4"
+        android:layout_toRightOf="@+id/btn5"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="52dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="聚合草精油"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Comfrey"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn4"
+        android:background="@color/transparent"
+        android:layout_toRightOf="@+id/btn5"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="22dp"/>
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn5"
+        android:background="@color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="15dp"/>
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@color/transparent"
+        android:layout_toRightOf="@+id/btn7"
+        android:layout_below="@+id/btn6"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="22dp"/>
+
+    <Button
+        android:id="@+id/free"
+        android:layout_width="101dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:text="自由调配"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="13dp"/>
+
+    <Button
+        android:id="@+id/forcast"
+        android:layout_width="101dp"
+        android:layout_height="40dp"
+        android:text="预设配方"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/free"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/big_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="23dp">
+
+            <ImageView
+                android:id="@+id/five"
+                android:layout_width="40dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:id="@+id/five_line"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@mipmap/on"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="24dp">
+
+            <ImageView
+                android:id="@+id/ten"
+                android:layout_width="40dp"
+                android:layout_height="80dp"/>
+
+            <ImageView
+                android:id="@+id/ten_line"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@mipmap/on"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="24dp">
+
+            <ImageView
+                android:id="@+id/fifteen"
+                android:layout_width="40dp"
+                android:layout_height="80dp"/>
+
+            <ImageView
+                android:id="@+id/fifteen_line"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@mipmap/on"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/twenty"
+                android:layout_width="40dp"
+                android:layout_height="80dp" />
+
+            <ImageView
+                android:id="@+id/twenty_line"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@mipmap/on"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/thirty"
+                android:layout_width="40dp"
+                android:layout_height="80dp"/>
+
+            <ImageView
+                android:id="@+id/thirty_line"
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:background="@mipmap/on"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
